@@ -1,0 +1,81 @@
+affine_trainable: false
+auto_save: true
+base_fun_name: silu
+ckpt_path: ./model
+device: cpu
+grid: 3
+grid_eps: 0.02
+grid_range:
+- -1
+- 1
+k: 3
+mult_arity: 2
+round: 0
+sb_trainable: true
+sp_trainable: true
+state_id: 5
+symbolic.funs_name.0:
+- - x
+  - x
+  - x^2
+  - x
+  - x
+  - exp
+  - x^2
+  - x
+  - x
+  - x
+  - x^2
+  - x
+  - x
+  - exp
+  - x^2
+  - x
+  - x
+  - x
+  - sin
+  - x
+  - sin
+  - x
+  - exp
+  - x
+  - x
+  - x
+  - x
+  - exp
+  - exp
+- - x
+  - x^2
+  - x^2
+  - x
+  - x
+  - exp
+  - x^2
+  - x
+  - x
+  - x
+  - x
+  - x
+  - x
+  - exp
+  - sin
+  - x
+  - x
+  - x
+  - sin
+  - x
+  - x
+  - x
+  - exp
+  - x
+  - x
+  - x
+  - x
+  - exp
+  - exp
+symbolic_enabled: true
+width:
+- - 29
+  - 0
+- - 2
+  - 0
